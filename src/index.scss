@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap");
+
+$base-color: #333333;
+
 *,
 *::before,
 *::after {
@@ -40,7 +43,7 @@ body {
 body {
   line-height: 1;
   font-family: "Manrope";
-  color: #333333;
+  color: $base-color;
 }
 
 .wrapper {
@@ -49,26 +52,29 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  // background-color: aqua;
 }
 
-[class*=__container] {
+[class*="__container"] {
   max-width: 1170px;
   margin: 0 auto;
 }
 
 @media (max-width: 1199.98px) {
-  [class*=__container] {
+  [class*="__container"] {
     max-width: 970px;
   }
 }
+
 @media (max-width: 991.98px) {
-  [class*=__container] {
+  [class*="__container"] {
     max-width: 750px;
   }
 }
+
 @media (max-width: 767.98px) {
-  [class*=__container] {
+  [class*="__container"] {
     max-width: none;
     padding: 0px 15px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
